@@ -78,6 +78,12 @@ heroku create
 git push heroku master
 ```
 
+This:
+1. Forwards the request to the API.
+2. Receives the response from the API.
+3. Adds the Access-Control-Allow-Origin header to the response.
+4. Passes that response, with that added header, back to the requesting frontend code.
+
 ### Costs
 
 ## The Extension
