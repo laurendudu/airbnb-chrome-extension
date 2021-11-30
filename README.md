@@ -3,9 +3,13 @@
 ## How To Use
 To use this extension, you must use the Chrome web browser. 
 - Clone this repository or download the according zip file (then extract it)
-- Go to **Manage Extensions**
+- Go to **Extensions** to the **top right** of your browser
 
-![image](https://user-images.githubusercontent.com/60437222/144079982-04cd0357-5b31-417a-b99e-101ae92e84fd.png)
+![image](https://user-images.githubusercontent.com/60437222/144094476-1bf67ce5-ee7b-4f0b-b29f-b0e8693051fa.png)
+
+- Click on **Manage Extensions**
+ ![image](https://user-images.githubusercontent.com/60437222/144094681-a3ee1cbb-ca47-46e3-bd44-f57c88b5a1d1.png)
+
 
 - If not already done, toggle the **Developper Mode** at the **top right** of the screen.
 
@@ -38,7 +42,9 @@ We have created a sequential neural network with a test size equal to 0.1. Indee
 The issues we encountered when created this model was to provide an accurate model with a very small dataset. We had to choose a low value for the test size to have a low loss and provide a good model. Another problem we have is that, again, since the dataset is very small, when we predict the price with other values, the result is not that accurate (as you will see when you will test our chrome extension). 
 
 ## The API
+The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud).
 ### How Does it Work?
+
 ### Issues
 
 ## The Extension
