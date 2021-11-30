@@ -59,6 +59,16 @@ The second issue which was the biggest, was dealing with the CORS policy. When c
 Access to fetch at 'xxx' from origin 'chrome-extension://xxx' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 ```
 
+To solve this problem, we used [cors-anywhere](https://github.com/Rob--W/cors-anywhere). This repository allowed to easily deploy a proxy with `Heroku`, which added the correct headers to the request. 
+
+```bash
+git clone https://github.com/Rob--W/cors-anywhere.git
+cd cors-anywhere/
+npm install
+heroku create
+git push heroku master
+```
+
 ### Costs
 
 ## The Extension
