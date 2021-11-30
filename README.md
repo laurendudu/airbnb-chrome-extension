@@ -8,7 +8,8 @@ To use this extension, you must use the Chrome web browser.
 ![image](https://user-images.githubusercontent.com/60437222/144094476-1bf67ce5-ee7b-4f0b-b29f-b0e8693051fa.png)
 
 - Click on **Manage Extensions**
- ![image](https://user-images.githubusercontent.com/60437222/144094681-a3ee1cbb-ca47-46e3-bd44-f57c88b5a1d1.png)
+
+![image](https://user-images.githubusercontent.com/60437222/144094681-a3ee1cbb-ca47-46e3-bd44-f57c88b5a1d1.png)
 
 
 - If not already done, toggle the **Developper Mode** at the **top right** of the screen.
