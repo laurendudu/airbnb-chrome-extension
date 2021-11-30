@@ -1,5 +1,7 @@
 # A Chrome Extension Implementing AirBnb Price Prediction
 
+This repository contains the code for a chrome extension which scraps an AirbBnb room page, and calls an API which predicts the price for one night. 
+
 ## How To Use
 To use this extension, you must use the Chrome web browser. 
 - Clone this repository or download the according zip file (then extract it)
@@ -22,10 +24,10 @@ To use this extension, you must use the Chrome web browser.
 - Select the directory where you cloned the project
 - The extension should be added!
 
-**To estimate the price of an AirBnb room, you must be on the [airbnb.com](https://airbnb.com) website. The extension will not work if the extension is .fr or other**
+**To estimate the price of an AirBnb room, you must be on the [airbnb.com](https://airbnb.com) website. The extension will not work if the extension is .fr or other.**
 
 ## The Prediction Model
-### How Does it Work?
+### Overview
 
 The idea we had was to predict the price of an Airbnb room based on a dataset. In order to do so, we searched for a complete dataset on Kaggle with the variables we wanted. We chose [this one](https://www.kaggle.com/airbnb/boston?select=listings.csv). The dataset matched all of the Airbnb room price in Boston, in the United States. 
 
@@ -43,17 +45,24 @@ We have created a sequential neural network with a test size equal to 0.1. Indee
 The issue we encountered while training this model was the accuracy. Since our dataset is relatively small, we had to choose a small test size, so we could minimize the loss. This lead to a bad accuracy when predicting the prices, generally the prices are predicted higher than expected. To solve this porblem, we could gather data from other locations, not only boston to construct a bigger dataset, and also use more input variables. 
 
 ## The API
-The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud).
 
-### How Does it Work?
 
-### Issues
+### Overview
+The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud). The API imports the model mentioned previously. It is coded in Python, with the `Flask` library, and was deployed with [Google Cloud Platform](https://cloud.google.com/). It is callable by a POST method. 
+
+## Issues 
+While deploying the API, there was some conflict between the keras and tensorflow versions. If the keras version was unspecified, the API had an internal server error. To solve this problem, we had to spcify a downgraded version of keras in `requirements.txt`.
+
+The second issue which was the biggest, was dealing with the CORS policy. When calling the API from the extension, the ports are not the same, which causes a block from the CORS policy. 
+
+```js
+Access to fetch at 'xxx' from origin 'chrome-extension://xxx' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+```
+
+### Costs
 
 ## The Extension
 ### How Does it work?
 ### Issues
+### Costs
 
-## Costs
-### The API
-### The Scraping
-### The Extension
