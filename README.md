@@ -11,7 +11,6 @@ To use this extension, you must use the Chrome web browser.
 
 ![image](https://user-images.githubusercontent.com/60437222/144094896-f87b27b1-7a07-44dc-a349-f5bc99bc2e7a.png)
 
-
 - If not already done, toggle the **Developper Mode** at the **top right** of the screen.
 
 ![image](https://user-images.githubusercontent.com/60437222/144077044-cff07051-284d-4d59-8bd7-eea073c4ba1d.png)
@@ -22,6 +21,8 @@ To use this extension, you must use the Chrome web browser.
 
 - Select the directory where you cloned the project
 - The extension should be added!
+
+**To estimate the price of an AirBnb room, you must be on the [airbnb.--com--](airbnb.com) website.**
 
 ## The Prediction Model
 ### How Does it Work?
