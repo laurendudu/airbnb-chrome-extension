@@ -9,7 +9,7 @@ To use this extension, you must use the Chrome web browser.
 
 - Click on **Manage Extensions**
 
-![image](https://user-images.githubusercontent.com/60437222/144094681-a3ee1cbb-ca47-46e3-bd44-f57c88b5a1d1.png)
+![image](https://user-images.githubusercontent.com/60437222/144094896-f87b27b1-7a07-44dc-a349-f5bc99bc2e7a.png)
 
 
 - If not already done, toggle the **Developper Mode** at the **top right** of the screen.
