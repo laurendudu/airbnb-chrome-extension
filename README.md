@@ -2,9 +2,18 @@
 
 ## How To Use
 To use this extension, you must use the Chrome web browser. 
-[ ] Clone this repository or download the according zip file (then extract it)
-[ ] Go to [Manage Extensions](chrome://extensions/)
-[ ] 
+- Clone this repository or download the according zip file (then extract it)
+- Go to [Manage Extensions](chrome://extensions/)
+- If not already done, toggle the **Developper Mode** at the **top right** of the screen.
+
+![image](https://user-images.githubusercontent.com/60437222/144077044-cff07051-284d-4d59-8bd7-eea073c4ba1d.png)
+
+- At the **top left** click **Load unpacked**
+
+![image](https://user-images.githubusercontent.com/60437222/144077906-c48f1aee-3290-446f-8985-f9510b64d43d.png)
+
+- Select the directory where you cloned the project
+- The extension should be added!
 
 ## The Prediction Model
 ### How Does it Work?
