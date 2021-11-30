@@ -22,7 +22,7 @@ To use this extension, you must use the Chrome web browser.
 - Select the directory where you cloned the project
 - The extension should be added!
 
-**To estimate the price of an AirBnb room, you must be on the [airbnb.--com--](airbnb.com) website.**
+**To estimate the price of an AirBnb room, you must be on the [airbnb.com](https://airbnb.com) website. The extension will not work if the extension is .fr or other**
 
 ## The Prediction Model
 ### How Does it Work?
@@ -40,8 +40,7 @@ We have created a sequential neural network with a test size equal to 0.1. Indee
 
 
 ### Issues
-
-The issues we encountered when created this model was to provide an accurate model with a very small dataset. We had to choose a low value for the test size to have a low loss and provide a good model. Another problem we have is that, again, since the dataset is very small, when we predict the price with other values, the result is not that accurate (as you will see when you will test our chrome extension). 
+The issue we encountered while training this model was the accuracy. Since our dataset is relatively small, we had to choose a small test size, so we could minimize the loss. This lead to a bad accuracy when predicting the prices, generally the prices are predicted higher than expected. To solve this porblem, we could gather data from other locations, not only boston to construct a bigger dataset, and also use more input variables. 
 
 ## The API
 The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud).
