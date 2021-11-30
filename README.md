@@ -26,9 +26,9 @@ To use this extension, you must use the Chrome web browser.
 ## The Prediction Model
 ### How Does it Work?
 
-The idea we had was to predict the price of an Airbnb room based on a dataset. For that, we searched for a complete dataset on Kaggle with the variables we wanted. After many analyzes on different datasets, we found the more interesting one. The dataset matched all of the Airbnb room price in Boston, in the United States. We found it on [Kaggle](https://www.kaggle.com/airbnb/boston?select=listings.csv).
+The idea we had was to predict the price of an Airbnb room based on a dataset. In order to do so, we searched for a complete dataset on Kaggle with the variables we wanted. We chose [this one](https://www.kaggle.com/airbnb/boston?select=listings.csv). The dataset matched all of the Airbnb room price in Boston, in the United States. 
 
-The name of the dataset is “listings.csv”. We treated the data to select only the variables we were interested in. As features, we wanted the number of guests, bathrooms, bedrooms, beds and reviews. But also, what type of room it was (an entire home/apartment, a private room or a shared room) and if the host is a super host or not. Of course, we had also the price variable, which is the variable we wanted to predict. Since the column associated to the price was in a string format, we had to treat it in order to have a column of integer without the dollar sign. 
+The name of the dataset is “listings.csv”. We treated the data to select only the variables we were interested in. As features, we wanted the `number of guests`, `bathrooms`, `bedrooms`, `beds` and `reviews`. But also, what `type of room` it was (an entire home/apartment, a private room or a shared room) and if the host is a `superhost` or not. Of course, we had also the price variable, which is the variable we wanted to predict. Since the column associated to the price was in a string format, we had to treat it in order to have a column of integer without the dollar sign. 
 
 We decided to create our prediction model in python through a Jupyter Notebook. The libraries we used are the following: 
   -	`Tensorflow`
@@ -44,6 +44,7 @@ The issues we encountered when created this model was to provide an accurate mod
 
 ## The API
 The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud).
+
 ### How Does it Work?
 
 ### Issues
