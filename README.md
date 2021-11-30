@@ -1,6 +1,10 @@
 # A Chrome Extension Implementing AirBnb Price Prediction
 
 ## How To Use
+To use this extension, you must use the Chrome web browser. 
+[ ] Clone this repository or download the according zip file (then extract it)
+[ ] Go to [Manage Extensions](chrome://extensions/)
+[ ] 
 
 ## The Prediction Model
 ### How Does it Work?
