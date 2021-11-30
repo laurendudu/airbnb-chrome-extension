@@ -3,7 +3,10 @@
 ## How To Use
 To use this extension, you must use the Chrome web browser. 
 - Clone this repository or download the according zip file (then extract it)
-- Go to [Manage Extensions](chrome://extensions/)
+- Go to **Manage Extensions**
+
+![image](https://user-images.githubusercontent.com/60437222/144079982-04cd0357-5b31-417a-b99e-101ae92e84fd.png)
+
 - If not already done, toggle the **Developper Mode** at the **top right** of the screen.
 
 ![image](https://user-images.githubusercontent.com/60437222/144077044-cff07051-284d-4d59-8bd7-eea073c4ba1d.png)
