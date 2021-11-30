@@ -7,7 +7,9 @@ To use this extension, you must use the Chrome web browser.
 - Clone this repository or download the according zip file (then extract it)
 - Go to **Extensions** to the **top right** of your browser
 
-![image](https://user-images.githubusercontent.com/60437222/144094476-1bf67ce5-ee7b-4f0b-b29f-b0e8693051fa.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/60437222/144094476-1bf67ce5-ee7b-4f0b-b29f-b0e8693051fa.png">
+</p>
 
 - Click on **Manage Extensions**
 
