@@ -86,9 +86,11 @@ This:
 
 ### Costs
 - Continer Registry
+
 The container is situated in the US (multi-region) is about $0.026 per GB per month. 
 
 - Cloud Run
+
 The cloud run is deploye in `europe-north` which is subject to Tier 1 pricing. 
 The cost for the CPU which is allocated only during request processing is $0.00002400 / vCPU-second beyond free tier. 
 The cost for the memory is $0.00000250 / GiB-second beyond free tier. 
