@@ -118,7 +118,7 @@ The cost is estimated [here](https://cloud.google.com/products/calculator/#id=ac
 ## The Extension
 The extension calls the API and displayes the estimated price for the specific room. 
 
-### How Does it work?
+### Overview
 The extension makes multiple API calls. To scrape the data of the AirBnb page, we used this [actor](https://apify.com/dtrungtin/airbnb-scraper) from [Apify](https://apify.com/).
 
 1. Call the Apify API to run a scraping task 
