@@ -92,8 +92,11 @@ The container is situated in the US (multi-region) is about $0.026 per GB per mo
 - Cloud Run
 
 The cloud run is deploye in `europe-north` which is subject to Tier 1 pricing. 
+
 The cost for the CPU which is allocated only during request processing is $0.00002400 / vCPU-second beyond free tier. 
+
 The cost for the memory is $0.00000250 / GiB-second beyond free tier. 
+
 The cost for requests is $0.40 / million requests beyond free tier. 
 
 The cost is estimated [here](https://cloud.google.com/products/calculator/#id=ac02c40b-a2bf-4240-8a64-7bcbd5409b57)
@@ -105,7 +108,21 @@ The extension calls the API and displayes the estimated price for the specific r
 ### How Does it work?
 The extension makes multiple API calls. To scrape the data of the AirBnb page, we used this [actor](https://apify.com/dtrungtin/airbnb-scraper) from [Apify](https://apify.com/).
 
-1. Call
+1. Call the Apify API to run a scraping task 
+
+This is is a `POST` call. It takes as an input the url form the active tab and returns data concerning the call, such as the ID of the run and the ID of the dataset. 
+
+2. Call the Apify API to retrieve the logs of the run
+
+This is a `GET` call. Thanks to the IDof the run we got earlier, we can access the logs of the task and determine if the scraping has finished, and stored the values to the according dataset provided by Apify. 
+
+3. Call the Apify API to retrieve the Dataset Items
+
+Once the logs confirm that the scraping has finished, we call a last Apify API with a `GET` method and the dataset ID to get the items of the scraping. These are presented in a JSON file and are very convenient for extraction.
+
+4. Call the price estimation API to estimate the price
+
+
 ### Issues
 ### Costs
 
