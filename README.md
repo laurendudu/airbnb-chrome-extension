@@ -63,7 +63,7 @@ The input should be specified in the body as a raw format. The parameters are:
 ```
 [[
   number of guests, 
-  number of bathrooms , 
+  number of bathrooms, 
   number of bedrooms, 
   number of beds, 
   number of reviews, 
@@ -137,5 +137,12 @@ Once the logs confirm that the scraping has finished, we call a last Apify API w
 
 
 ### Issues
-### Costs
+The biggest issue was dealing with asynchronous functions. We had to implement them to deal with the multiple API calls, one after the other. 
 
+Another issue was caused by the scraping. As the scraping can take some time, we needed to wait for the dataset to be filled, to be able to retrieve it. We tried to delay the task with a fixed amount of time, such as 20 senconds, but sometimes it was not enough. Instead, we used a `setInterval()` method to check the logs of the scraper run every second. 
+
+Originally, we wanted to use the [Official AirBnb API](https://www.airbnb.fr/partner), but it is not available for use anymore. This is why we had to resolve to [Apify](apify.com) which is costly. 
+
+
+### Costs
+Apify is pretty costly, scraping around 10,000 pages a month is aproximately $42. The free tier contains $5 credits and 4GB of actor RAM. This could be reduced by scraping the active tab in the action of the extension popup, but this was too complicated to implement with the time given. 
