@@ -141,7 +141,7 @@ The biggest issue was dealing with asynchronous functions. We had to implement t
 
 Another issue was caused by the scraping. As the scraping can take some time, we needed to wait for the dataset to be filled, to be able to retrieve it. We tried to delay the task with a fixed amount of time, such as 20 senconds, but sometimes it was not enough. Instead, we used a `setInterval()` method to check the logs of the scraper run every second. 
 
-Originally, we wanted to use the [Official AirBnb API](https://www.airbnb.fr/partner), but it is not available for use anymore. This is why we had to resolve to [Apify](apify.com) which is costly. 
+Originally, we wanted to use the [Official AirBnb API](https://www.airbnb.fr/partner), but it is not available for use anymore. This is why we had to resolve to [Apify](https://apify.com) which is costly. 
 
 
 ### Costs
