@@ -4,34 +4,34 @@ This repository contains the code for a chrome extension which scraps an AirbBnb
 
 ## How To Use
 To use this extension, you must use the Chrome web browser. 
-- Clone this repository or download the according zip file (then extract it)
-- Go to **Extensions** to the **top right** of your browser
+1. Clone this repository or download the according zip file (then extract it)
+2. Go to **Extensions** to the **top right** of your browser
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/60437222/144094476-1bf67ce5-ee7b-4f0b-b29f-b0e8693051fa.png">
 </p>
 
-- Click on **Manage Extensions**
+3. Click on **Manage Extensions**
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/60437222/144094896-f87b27b1-7a07-44dc-a349-f5bc99bc2e7a.png">
 </p>
 
-- If not already done, toggle the **Developper Mode** at the **top right** of the screen.
+4. If not already done, toggle the **Developper Mode** at the **top right** of the screen.
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/60437222/144077044-cff07051-284d-4d59-8bd7-eea073c4ba1d.png">
 </p>
 
-- At the **top left** click **Load unpacked**
+5. At the **top left** click **Load unpacked**
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/60437222/144077906-c48f1aee-3290-446f-8985-f9510b64d43d.png">
 </p>
 
 
-- Select the directory where you cloned the project
-- The extension should be added!
+6. Select the directory where you cloned the project
+7. The extension should be added!
 
 **To estimate the price of an AirBnb room, you must be on the [airbnb.com](https://airbnb.com) website. The extension will not work if the extension is .fr or other.**
 
@@ -85,9 +85,25 @@ This:
 4. Passes that response, with that added header, back to the requesting frontend code.
 
 ### Costs
+- Continer Registry
+The container is situated in the US (multi-region) is about $0.026 per GB per month. 
+
+- Cloud Run
+The cloud run is deploye in `europe-north` which is subject to Tier 1 pricing. 
+The cost for the CPU which is allocated only during request processing is $0.00002400 / vCPU-second beyond free tier. 
+The cost for the memory is $0.00000250 / GiB-second beyond free tier. 
+The cost for requests is $0.40 / million requests beyond free tier. 
+
+The cost is estimated [here](https://cloud.google.com/products/calculator/#id=ac02c40b-a2bf-4240-8a64-7bcbd5409b57)
+
 
 ## The Extension
+The extension calls the API and displayes the estimated price for the specific room. 
+
 ### How Does it work?
+The extension makes multiple API calls. To scrape the data of the AirBnb page, we used this [actor](https://apify.com/dtrungtin/airbnb-scraper) from [Apify](https://apify.com/).
+
+1. Call
 ### Issues
 ### Costs
 
