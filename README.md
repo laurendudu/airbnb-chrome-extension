@@ -60,7 +60,7 @@ The issue we encountered while training this model was the accuracy. Since our d
 The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud). The API imports the model mentioned previously. It is coded in Python, with the `Flask` library, and was deployed with [Google Cloud Platform](https://cloud.google.com/). It is callable by a `POST` method, by specifying the header `Content-Type: application/json`
 
 The input should be specified in the body as a raw format. The parameters are:
-```JSON
+```
 [[
   number of guests, 
   number of bathrooms , 
