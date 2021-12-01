@@ -57,7 +57,20 @@ The issue we encountered while training this model was the accuracy. Since our d
 
 
 ### Overview
-The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud). The API imports the model mentioned previously. It is coded in Python, with the `Flask` library, and was deployed with [Google Cloud Platform](https://cloud.google.com/). It is callable by a POST method. 
+The repository for this project can be found [here](https://github.com/laurendudu/airbnb-api-gcloud). The API imports the model mentioned previously. It is coded in Python, with the `Flask` library, and was deployed with [Google Cloud Platform](https://cloud.google.com/). It is callable by a `POST` method, by specifying the header `Content-Type: application/json`
+
+The input should be specified in the body as a raw format. The parameters are:
+```JSON
+[[
+  number of guests, 
+  number of bathrooms , 
+  number of bedrooms, 
+  number of beds, 
+  number of reviews, 
+  room type, 
+  superhost boolean
+]]
+```
 
 ## Issues 
 While deploying the API, there was some conflict between the keras and tensorflow versions. If the keras version was unspecified, the API had an internal server error. To solve this problem, we had to spcify a downgraded version of keras in `requirements.txt`.
